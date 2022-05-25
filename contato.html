@@ -24,15 +24,18 @@
            
         <form>
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome"> 
-    
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email"> 
-            
-            <label for="assunto">Assunto:</label><br>
-            <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+            <input type="text" id="nome"  onkeyup='validaNome()'> 
+        <div id="txtNome"> </div>
     <br>
-            <button>Enviar</button>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" onkeyup='validaEmail()'> 
+            <div id="txtEmail"> </div>
+            <br>
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+            <div id="txtAssunto"> </div>
+    <br>
+            <button onclick='enviar()'>Enviar</button>
     
         </form>
 
@@ -42,27 +45,29 @@
         <p> Av. Caxangá </p>
         <p> Recife </p>
     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.453693772109!2d-34.91500368601929!3d-8.055117094200012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196de61b7e0b%3A0x6eb8c9cff6fe10ae!2sAv.%20Caxang%C3%A1%20-%20Madalena%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1653365064542!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.453693772109!2d-34.91500368601929!3d-8.055117094200012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196de61b7e0b%3A0x6eb8c9cff6fe10ae!2sAv.%20Caxang%C3%A1%20-%20Madalena%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1653365064542!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
 
          </div>
 
          <hr>
          <footer> 
-            <div class="container">
+             <div class="container">
+ 
+                 <a href="https://www.linkedin.com/in/isabelly-lemos/" target="_blank">
+                     <img class="tm-social p-10" src="assets/img/linkedin.png" alt=" Logo do Linkedin">
+                 </a>
+                 <a href="https://www.instagram.com/isabellylemoss/" target="_blank">
+                 <img class="tm-social p-10" src="assets/img/instagram.png" alt=" Logo do instagram">
+ 
+                 </a>
+ 
+             </div>
+          <p class="center">
+             Todos os direitos reservados: Isabelly Lemos & copy
+          </p> 
+         </footer>
+         <script src="assets/js/script.js">
 
-                <a href="https://www.linkedin.com/in/isabelly-lemos/" target="_blank">
-                    <img class="tm-social p-10" src="assets/img/linkedin.png" alt=" Logo do Linkedin">
-                </a>
-                <a href="https://www.instagram.com/isabellylemoss/" target="_blank">
-                <img class="tm-social p-10" src="assets/img/instagram.png" alt=" Logo do instagram">
-
-                </a>
-
-            </div>
-         <p class="center">
-            Todos os direitos reservados: Isabelly Lemos & copy
-         </p> 
-        </footer>
-
-</body>
+         </script>
+        </body>
 </html>
